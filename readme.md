@@ -19,10 +19,10 @@ artifactID - It's the name of the jar without version. Whatever name we want wit
 #
 
 # Maven
-The maven build has three phases:
-.default: it's the main phase as it is responsible for the project deployment
-.site: used to create the project's site documentation
-.clean: used to clean the project and remove all files that are generated during the previous build
+    The maven build has three phases:
+    .default: it's the main phase as it is responsible for the project deployment
+    .site: used to create the project's site documentation
+    .clean: used to clean the project and remove all files that are generated during the previous build
 
 These are the most common default lifecycle phases executed.
 
