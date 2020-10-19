@@ -24,25 +24,25 @@ artifactID - It's the name of the jar without version. Whatever name we want wit
     .site: used to create the project's site documentation
     .clean: used to clean the project and remove all files that are generated during the previous build
 
-These are the most common default lifecycle phases executed.
+    These are the most common default lifecycle phases executed.
 
-.validate: validate the project is correct and all necessary information is available
-.compile: compile the source code of the project
-.test: test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
-.package: take the compiled code and package it in its distributable format, such as a JAR.
-.integration-test: process and deploy the package if necessary into an environment where integration tests can be run
-.verify: run any checks to verify the package is valid and meets quality criteria
-.install: install the package into the local repository, for use as a dependency in other projects locally
-.deploy: done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
+    .validate: validate the project is correct and all necessary information is available
+    .compile: compile the source code of the project
+    .test: test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+    .package: take the compiled code and package it in its distributable format, such as a JAR.
+    .integration-test: process and deploy the package if necessary into an environment where integration tests can be run
+    .verify: run any checks to verify the package is valid and meets quality criteria
+    .install: install the package into the local repository, for use as a dependency in other projects locally
+    .deploy: done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
 
-A maven phase represents a stage in the Maven project life cycle and every phase has a different job.
+    A maven phase represents a stage in the Maven project life cycle and every phase has a different job.
 
-.Each phase is made by a sequence of maven goals.
-.A maven goal is what's responsible for a specific task.
+    .Each phase is made by a sequence of maven goals.
+    .A maven goal is what's responsible for a specific task.
 
 
-For example, to list all goals bound to the compile phase, we can run:
-    mvn help:describe -Dcmd=compile
+    For example, to list all goals bound to the compile phase, we can run:
+        mvn help:describe -Dcmd=compile
 
 #
 
