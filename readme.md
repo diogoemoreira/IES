@@ -19,23 +19,25 @@ artifactID - It's the name of the jar without version. Whatever name we want wit
 #
 
 # Maven
-    The maven build has three phases:
+   The maven build has three phases:
     .default: it's the main phase as it is responsible for the project deployment
     .site: used to create the project's site documentation
     .clean: used to clean the project and remove all files that are generated during the previous build
 
-    These are the most common default lifecycle phases executed.
+   These are the most common default lifecycle phases executed.
 
     .validate: validate the project is correct and all necessary information is available
     .compile: compile the source code of the project
-    .test: test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+    .test: test the compiled source code using a suitable unit testing framework. These tests should not require the code 
+    to be packaged or deployed
     .package: take the compiled code and package it in its distributable format, such as a JAR.
     .integration-test: process and deploy the package if necessary into an environment where integration tests can be run
     .verify: run any checks to verify the package is valid and meets quality criteria
     .install: install the package into the local repository, for use as a dependency in other projects locally
-    .deploy: done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
+    .deploy: done in an integration or release environment, copies the final package to the remote repository
+    for sharing with other developers and projects.
 
-    A maven phase represents a stage in the Maven project life cycle and every phase has a different job.
+   A maven phase represents a stage in the Maven project life cycle and every phase has a different job.
 
     .Each phase is made by a sequence of maven goals.
     .A maven goal is what's responsible for a specific task.
@@ -102,5 +104,5 @@ A container runs natively on Linux and shares the kernel of the host machine wit
 
 ## Qual a relevância de configurar “volumes” quando se pretende preparar um container para servir uma base de dados?
 
-  É relevante configurar volumes pois a informação armazenada da base de dados persiste mesmo após um reboot, ou seja, a base de dados não é volátil
+    É relevante configurar volumes pois a informação armazenada da base de dados persiste mesmo após um reboot, ou seja, a base de dados não é volátil
 
