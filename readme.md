@@ -1,7 +1,10 @@
 ## Maven commands:
     .mvn --version
-    Checks Maven version
-
+    Checks Maven version / mostly used to check if maven is installed
+    
+    -mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
+    To generate a new project from this archetype, type
+    
     .mvn clean package
     goes through clean and then package (both explained below)
 
