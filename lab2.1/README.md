@@ -6,16 +6,20 @@ webapp-javaee7 is for exercise 2.1
 
     There are three essential methods for the life cycle of a servlet – init(), service(), and destroy(). 
 
-        .the init() method is invoked during initialization stage of the servlet life cycle. it is passed an object implementing the javax.servlet.servletconfig interface, which allows the servlet to access initialization parameters from the web application.
+        .the init() method is invoked during initialization stage of the servlet life cycle.  
+        it is passed an object implementing the javax.servlet.servletconfig interface, which allows the servlet to access initialization parameters from the web application.
 
-        .the service() method is invoked upon each request after its initialization. each request is serviced in its own separate thread. the web container calls the service() method of the servlet for every request. the service() method determines the kind of request being made and dispatches it to an appropriate method to handle the request.
+        .the service() method is invoked upon each request after its initialization.  
+        each request is serviced in its own separate thread. the web container calls the service() method of the servlet for every request.  
+        the service() method determines the kind of request being made and dispatches it to an appropriate method to handle the request.
 
         .the destroy() method is invoked when the servlet object should be destroyed. it releases the resources being held. 
 
     A servlet must be deployed to a Java servlet container in order to become usable.
 
 # Servlet container
-    The basic idea of servlet container is using java to dynamically generate the web page on the server side. So servlet container is essentially a part of a web server that interacts with the servlets
+    The basic idea of servlet container is using java to dynamically generate the web page on the server side.  
+    So servlet container is essentially a part of a web server that interacts with the servlets
 
 ## Servlet container responsabilities/services (3-5):
 
@@ -27,7 +31,8 @@ webapp-javaee7 is for exercise 2.1
     
     4.the container invokes the init() method of the servlet for initialization(invoked once when the servlet is loaded first time)
     
-    5.the container invokes the service() method of the servlet to process the http request, i.e., read data in the request and formulate a response. the servlet remains in the container’s address space and can process other http requests.
+    5.the container invokes the service() method of the servlet to process the http request, i.e., read data in the request and formulate a response.  
+    the servlet remains in the container’s address space and can process other http requests.
     
     6.web server return the dynamically generated results to the correct location
 
